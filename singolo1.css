@@ -424,3 +424,22 @@ template {
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 /* main styles */
+
+.container {
+    box-sizing: border-box;
+    padding: 0 10px;
+    max-width: 960px;
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-centered-h {
+    justify-content: center;
+}
+
+.flex-centered-v {
+    align-items: center;
+}
