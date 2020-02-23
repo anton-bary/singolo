@@ -417,3 +417,10 @@ template {
 [hidden] {
     display: none;
 }
+
+
+/* font includes */
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* main styles */
