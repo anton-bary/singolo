@@ -1,3 +1,7 @@
+/* font includes */
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 
@@ -419,11 +423,11 @@ template {
 }
 
 
-/* font includes */
-
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 /* main styles */
+
+body {
+    font-family: 'Lato';
+}
 
 .container {
     box-sizing: border-box;
@@ -442,4 +446,24 @@ template {
 
 .flex-centered-v {
     align-items: center;
+}
+
+.header {
+    background-color: #2d303a;
+    padding: 35px 0 55px;
+}
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo__text {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Lato';
+}
+
+.logo__text_white {
+    color: #f2f2f2;
 }
