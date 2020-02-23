@@ -426,7 +426,20 @@ template {
 /* main styles */
 
 body {
+    position: relative;
     font-family: 'Lato';
+}
+
+.pixel-perfect {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.pixel-perfect img {
+    opacity: 0.5;
 }
 
 .container {
@@ -451,7 +464,8 @@ body {
 
 .header {
     background-color: #2d303a;
-    padding: 35px 0 55px;
+    padding: 30px 0 32px;
+    border-bottom: 5px solid #323746;
 }
 
 .logo {
@@ -463,8 +477,63 @@ body {
     margin: 0;
     font-size: 25px;
     font-family: 'Lato';
+    letter-spacing: -0.4px;
 }
 
-.logo__text_white {
+.logo__note {
+    margin-left: -5px;
+}
+
+.text_white {
     color: #f2f2f2;
+}
+
+.text_red {
+    color: #f06c64;
+}
+
+.nav {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.nav__item {
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2px 15px;
+    position: relative;
+    letter-spacing: -0.2px;
+}
+
+.nav__item:after {
+    background-color: #494e62;
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% - 1.5px);
+}
+
+.nav__item:last-of-type {
+    padding-right: 0;
+}
+
+.nav__item:last-of-type:after {
+    display: none;
+}
+
+.nav__item:hover,
+.nav__item:visited,
+.nav__item:focus {
+    color: #f06c64;
+}
+
+.nav__item.active {
+    color: #f06c64;
 }
