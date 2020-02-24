@@ -565,6 +565,7 @@ h6 {
     transform: translateY(-50%);
     width: 16px;
     height: 27px;
+    transition: transform 0.2s ease;
 }
 
 .slider__arrow_left {
@@ -575,6 +576,14 @@ h6 {
 .slider__arrow_right {
     background: url(assets/arrow-right.png) 0 0 no-repeat;
     right: 0;
+}
+
+.slider__arrow_left:hover {
+    transform: translateY(-50%) translateX(-5px);
+}
+
+.slider__arrow_right:hover {
+    transform: translateY(-50%) translateX(5px);
 }
 
 .iphone {
